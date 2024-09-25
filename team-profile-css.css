@@ -1,0 +1,258 @@
+
+
+    body { 
+        font-family: Arial, sans-serif; 
+        /*background-color: #f48fb1 ; */
+        background-image: url('background.jpg');
+        margin: 0; 
+        padding: 0; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        min-height: 100vh; 
+        flex-direction: column; 
+        background-repeat: no-repeat;
+        background-size: cover;
+    } 
+
+    h1 {  /* TEAM PROFILE TITLE */
+        color: #333; 
+    } 
+    
+    .container { 
+        display: flex; 
+        gap: 15px; 
+        width: 1250px; 
+        max-width: 1300px; 
+        
+    } 
+
+    .member { /* CONTAINER OR BACKGROUND OF EACH MEMBER */  
+        overflow: hidden; 
+        text-align: center; 
+        padding: 18px; 
+        padding-bottom: 50px;
+        width: 1250px;
+        height: 400px;
+        padding: 25px;
+        border-radius: 10px;
+        transition: transform .2s;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background: transparent;
+        border: 2px solid rgba(255, 255, 255, .5);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    } 
+
+    .member:hover { /* ZOOM IN HOVER AND SHADOW */
+        -ms-transform: scale(1.0); /* IE 9 */
+        -webkit-transform: scale(1.0); /* Safari 3-8 */
+        transform: scale(1.1); 
+        box-shadow: 0 3px 8px 0 rgba(252, 251, 251, 0.925), 0 6px 20px 0 rgb(193, 177, 177);
+    }
+
+    .member img { /* PROFILE PICTURES OF EACH MEMBER */
+        border-radius: 50%; 
+        width: 120px; 
+        height: 120px; 
+        object-fit: cover; 
+        margin-bottom: 15px; 
+    } 
+
+    .member h2 { /* TEXT FOR THE NAMES OF EACH MEMBER */
+        font-size: 22px; 
+        color: #333; 
+        margin: 10px 0; 
+    } 
+
+    .member p.section {  /* TEXT FOR THE SECTION */
+        font-size: 18px; 
+        color: #333; 
+        margin: 5px 0 15px; 
+    } 
+
+    #facebook { /* FACEBOOK ICON */
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        margin-top: 5px;
+    }
+
+    #github { /* GITHUB ICON */
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        margin-left: 80px;
+        margin-top: 5px;
+    }    
+
+    #linkedin { /* LINKEDIN ICON */
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        margin-left: 130px;
+        margin-top: 5px;
+    } 
+
+    #mottoinlife-mikka  { /* TEXT FOR MOTTO IN LIFE OF MEMBER MIKKA */
+        font-size: 16px; 
+        color: #232222; 
+        margin-bottom: 15px; 
+        margin-top: 25px;
+    }
+
+    #mottoinlife-mikylla  { /* TEXT FOR MOTTO IN LIFE OF MEMBER MIKYLLA */
+        font-size: 16px; 
+        color: #232222; 
+        margin-bottom: 26px; 
+        margin-top: 32px;
+    }
+
+    #mottoinlife-jeanna  { /* TEXT FOR MOTTO IN LIFE OF MEMBER JEANNA */
+        font-size: 16px; 
+        color: #232222; 
+        margin-bottom: 58px; 
+        margin-top: 55px;
+    }
+
+    #mottoinlife-shaine  { /*TEXT FOR MOTTO IN LIFE OF MEMBER SHAINE */
+        font-size: 16px; 
+        color: #232222; 
+        margin-bottom: 38px; 
+        margin-top: 38px;
+    }
+
+    #mottoinlife-katrina  { /* TEXT FOR MOTTO IN LIFE OF MEMBER KATRINA */
+        font-size: 16px; 
+        color: #232222; 
+        margin-bottom: 48px; 
+        margin-top: 46px;
+    }
+
+    #overlaymikka { /* MEMBER MIKKA'S OVERLAY */
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(75, 5, 57, 0.9);
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    #overlaymikay { /* MEMBER MIKYLLA'S OVERLAY */
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(75, 5, 57, 0.9);
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    #overlayjeanna { /* MEMBER JEANNA'S OVERLAY */
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(75, 5, 57, 0.9);
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    #overlayshaine { /* MEMBER SHAINE'S OVERLAY */
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(75, 5, 57, 0.9);
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    #overlaykatrina { /* MEMBER KATRINA'S OVERLAY */
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(75, 5, 57, 0.9);
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .overlay-description { 
+        text-align: center; 
+        padding: 18px; 
+        padding-bottom: 50px;
+        display: flex;
+    }
+
+    .overlay-container {
+        height: 70%;
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    .text { /* TEXT IN OVERLAY */
+        color: aliceblue;
+        font-size: 20px;
+        text-align: left;
+        margin-left: 150px;
+        width: fit-content;
+        line-height: 40px;
+        font-weight: 500;
+        margin-top: 50px;
+    }
+    
+    .overlay-description img.icon{  /* ICONS IN OVERLAY*/
+        height: 25px;
+        width: 28px;
+        margin-top: 15px;
+    }
+
+    .overlay-image img.profile {  /* IMAGE IN OVERLAY */
+        height: 350px;
+        width: 280px;
+        border-radius: 10px;
+        justify-content: center;
+    }
+
+    .overlay-image {
+        height: 370px;
+        width: 300px;
+        margin-left: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-style: solid;
+        border-radius: 10px;
+        border-color: aliceblue;
+    }
+
+    
